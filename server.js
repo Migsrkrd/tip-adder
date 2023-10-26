@@ -2,6 +2,10 @@ const express = require('express');
 const path = require('path');
 const { clog } = require('./middleware/clog');
 const api = require('./routes/index.js');
+const { error } = require('console');
+const {uuid} = require("uuidv4");
+const diagnostic = require("./db/diagnostics.json")
+const fs = require("fs")
 
 const PORT = process.env.port || 3001;
 
@@ -33,6 +37,29 @@ app.get("*", (req,res)=>{
 }
 );
 
+app.post("/api/diagnostics", (req,res) => {
+  const {time, error_id, errors:{tip, topic, username}}= req.body;
+
+const newDiagnostic = {
+  time: Date.now(),
+  error_id: uuid(),
+  errors: {
+    tip,
+    topic,
+    username
+  }
+};
+
+diagnostic.push(newDiagnostic);
+fs.writeFile(diagnostic, JSON.stringify(diagnostic), (err) => 
+err
+  ? console.error(error)
+  : console.log("new diagnostic written"));
+
+});
+
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
+
+console.log(error)
