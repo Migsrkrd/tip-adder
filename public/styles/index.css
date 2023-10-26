@@ -348,6 +348,9 @@ template {
   box-sizing: border-box;
 }
 
+
+
+
 html,
 body {
   min-height: 100%;
@@ -1706,3 +1709,4 @@ label form [type='radio'] {
     align-content: center;
   }
 }
+
