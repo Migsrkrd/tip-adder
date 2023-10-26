@@ -27,6 +27,12 @@ app.get('/feedback', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/pages/feedback.html'))
 );
 
+app.get("*", (req,res)=>{
+  res.sendFile(path.join(__dirname, '/public/pages/404.html'))
+  console.error(error)
+}
+);
+
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
