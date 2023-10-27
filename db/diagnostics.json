@@ -1,29 +1,101 @@
 [
-  {
-    "time": 1616087173408,
-    "error_id": "249911fc-ce9d-4905-a934-745845b41c7a",
-    "errors": {
-      "tip:": "",
-      "topic": "Gaming is not a valid topic",
-      "username": ""
+    {
+        "time": 1616087173408,
+        "error_id": "249911fc-ce9d-4905-a934-745845b41c7a",
+        "errors": {
+            "tip:": "",
+            "topic": "Gaming is not a valid topic",
+            "username": ""
+        }
+    },
+    {
+        "time": 1616087196372,
+        "error_id": "a27c0017-0ac4-4f81-83a4-2adcb42737c3",
+        "errors": {
+            "tip:": "Tip must be at least 15 characters long",
+            "topic": "",
+            "username": ""
+        }
+    },
+    {
+        "time": 1616087317843,
+        "error_id": "ca0616fa-f603-4d85-a9c6-fa62c73a9bf9",
+        "errors": {
+            "tip:": "Tip must be at least 15 characters long",
+            "topic": "",
+            "username": " Username is too short"
+        }
+    },
+    {
+        "errors": {
+            "username": "",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "51a3670f-24c9-4a44-b7e4-d67bcc43b38e",
+        "time": 1698378952821
+    },
+    {
+        "time": 1698379098997,
+        "error_id": "0cdc9f43-050c-482c-b95f-1c7ea875e4a5",
+        "errors": {
+            "username": "",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        }
+    },
+    {
+        "time": 1698379248467,
+        "error_id": "b0a10fd9-ecb2-4d6a-b677-bb30bf549f32",
+        "errors": {
+            "username": "",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        }
+    },
+    {
+        "time": 1698379476474,
+        "error_id": "4cb6c485-0faf-47d6-a8ec-4a8221d6c62e",
+        "errors": {
+            "username": "",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        }
+    },
+    {
+        "time": 1698379561851,
+        "error_id": "b81770f3-97d4-427c-9933-869e28e5937b",
+        "errors": {
+            "username": "",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        }
+    },
+    {
+        "time": 1698379597225,
+        "error_id": "684db55d-5362-45e9-b681-4bd43ffbfb34",
+        "errors": {
+            "username": "",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        }
+    },
+    {
+        "time": 1698379605002,
+        "error_id": "d7a88834-c9b0-408b-a5b8-19336f4acf70",
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        }
+    },
+    {
+        "time": 1698379666170,
+        "error_id": "021b485d-bd44-4c20-9994-8fd1cf84df09",
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "",
+            "topic": ""
+        }
     }
-  },
-  {
-    "time": 1616087196372,
-    "error_id": "a27c0017-0ac4-4f81-83a4-2adcb42737c3",
-    "errors": {
-      "tip:": "Tip must be at least 15 characters long",
-      "topic": "",
-      "username": ""
-    }
-  },
-  {
-    "time": 1616087317843,
-    "error_id": "ca0616fa-f603-4d85-a9c6-fa62c73a9bf9",
-    "errors": {
-      "tip:": "Tip must be at least 15 characters long",
-      "topic": "",
-      "username": " Username is too short"
-    }
-  }
 ]

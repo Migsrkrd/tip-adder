@@ -125,6 +125,20 @@ const showErrors = (errorObj) => {
 const submitDiagnostics = (submissionObj) => {
   // TODO: your code here
   const {isValid, errors} = submissionObj;
+  const {username, tip, topic} = errors;
+  const errorMessage = [];
+
+  if (username) {
+    errorMessage.push(username);
+  };
+
+  if (tip) {
+    errorMessage.push(tip);
+  };
+
+  if (topic) {
+    errorMessage.push(topic);
+  };
 
   fetch('/api/diagnostics', {
     method: 'POST',
@@ -133,7 +147,10 @@ const submitDiagnostics = (submissionObj) => {
     },
     body: JSON.stringify(errors, null, 4),
   }).then((response) => response.json())
-    .catch((error) => {
+  .then((data) =>{
+    alert(errorMessage);
+  }
+  ).catch((error) => {
     console.error('Error:', error);
     });
 };
